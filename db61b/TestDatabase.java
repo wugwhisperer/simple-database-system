@@ -12,7 +12,7 @@ public class TestDatabase {
     /** Test Table retrieving aspect of database. */
     @Test
     public void testGetTable() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         Database database = new Database();
         database.put("enrolled", t1);
         Table expected = t1;
@@ -21,8 +21,8 @@ public class TestDatabase {
     }
 
     /** Run all unit test in this class. */
-    public static void main(String[] ignored) {
-        System.exit(ucb.junit.textui.runClasses(TestDatabase.class));
-    }
+//    public static void main(String[] ignored) {
+//        System.exit(ucb.junit.textui.runClasses(TestDatabase.class));
+//    }
 }
 

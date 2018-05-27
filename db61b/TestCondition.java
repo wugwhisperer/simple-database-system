@@ -12,7 +12,7 @@ public class TestCondition {
     /** Test column relation literal conditions. */
     @Test
     public void testColumnRelationLiteral() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         String colName = "SID";
         Column column1 = new Column(colName, new Table[]{t1});
         String literal = "103";
@@ -32,8 +32,8 @@ public class TestCondition {
     /** Test column relation column conditions. */
     @Test
     public void testColumnRelationColumn() {
-        Table t1 = Table.readTable("../testing/enrolled");
-        Table t2 = Table.readTable("../testing/students");
+        Table t1 = Table.readTable("testing/enrolled");
+        Table t2 = Table.readTable("testing/students");
         String colName = "SID";
         Column column1 = new Column(colName, new Table[]{t1});
         Column column2 = new Column(colName, new Table[]{t2});
@@ -49,8 +49,8 @@ public class TestCondition {
     }
 
     /** Run all unit test in this class. */
-    public static void main(String[] ignored) {
-        System.exit(ucb.junit.textui.runClasses(TestCondition.class));
-    }
+//    public static void main(String[] ignored) {
+//        System.exit(ucb.junit.textui.runClasses(TestCondition.class));
+//    }
 }
 

@@ -1,9 +1,7 @@
 package db61b;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -137,6 +135,9 @@ public class Table {
         BufferedReader input;
         Table table;
         input = null;
+//        Path currentRelativePath = Paths.get("");
+//        String s = currentRelativePath.toAbsolutePath().toString();
+//        System.out.println("Current relative path is: " + s);
         try {
             input = new BufferedReader(new FileReader(name + ".db"));
             String header = input.readLine();

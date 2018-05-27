@@ -10,7 +10,7 @@ public class TestColumn {
     /** Return Column name. */
     @Test
     public void testGetName() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         String colName = "SID";
         Column column = new Column(colName, new Table[]{t1});
         String actual = column.getName();
@@ -20,7 +20,7 @@ public class TestColumn {
     /** Return Column row value. */
     @Test
     public void testGetFrom() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         String colName = "SID";
         Column column = new Column(colName, new Table[]{t1});
         String actual = column.getFrom(
@@ -32,7 +32,7 @@ public class TestColumn {
     }
 
     /** Run ALL unit tests in this class. */
-    public static void main(String[] ignored) {
-        System.exit(ucb.junit.textui.runClasses(TestColumn.class));
-    }
+//    public static void main(String[] ignored) {
+//        System.exit(ucb.junit.textui.runClasses(TestColumn.class));
+//    }
 }

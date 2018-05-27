@@ -16,7 +16,7 @@ public class TestTable {
     /** Test reading blank table. */
     @Test
     public void testReadTable() {
-        Table t1 = Table.readTable("../testing/blank");
+        Table t1 = Table.readTable("testing/blank");
         String[] expected = new String[]{"First", "Second", "Third"};
         String[] actual = new String[t1.columns()];
         for (int i = 0; i < t1.columns(); ++i) {
@@ -28,7 +28,7 @@ public class TestTable {
     /** Test reading existing table. */
     @Test
     public void testreadTable2() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         String[] expected = new String[]{"SID", "CCN", "Grade"};
         String[] actual = new String[t1.columns()];
         for (int i = 0; i < t1.columns(); ++i) {
@@ -56,7 +56,7 @@ public class TestTable {
     /** Test printing existing table. */
     @Test
     public void testprint() {
-        Table t1 = Table.readTable("../testing/enrolled");
+        Table t1 = Table.readTable("testing/enrolled");
         String expected = "  101 21001 B\n"
                 + "  101 21105 B+\n"
                 + "  101 21228 B\n"
@@ -90,8 +90,8 @@ public class TestTable {
     /** Test select for single table. */
     @Test
     public void testSelect1() {
-        Table t1 = Table.readTable("../testing/enrolled");
-        Table t2 = Table.readTable("../testing/students");
+        Table t1 = Table.readTable("testing/enrolled");
+        Table t2 = Table.readTable("testing/students");
         List<String> columnNames = new ArrayList<>();
         columnNames.add("SID");
         Column column1 = new Column("CCN", new Table[]{t1});
@@ -116,8 +116,8 @@ public class TestTable {
     /** Test select for two tables. */
     @Test
     public void testSelect2() {
-        Table t1 = Table.readTable("../testing/enrolled");
-        Table t2 = Table.readTable("../testing/students");
+        Table t1 = Table.readTable("testing/enrolled");
+        Table t2 = Table.readTable("testing/students");
         List<String> columnNames = new ArrayList<>();
         columnNames.add("CCN");
         String columnCompared = "SID";
@@ -148,8 +148,8 @@ public class TestTable {
     }
 
     /** Run all unit test in this class. */
-    public static void main(String[] ignored) {
-        System.exit(ucb.junit.textui.runClasses(TestTable.class));
-    }
+//    public static void main(String[] ignored) {
+//        System.exit(ucb.junit.textui.runClasses(TestTable.class));
+//    }
 }
 
