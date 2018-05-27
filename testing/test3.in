@@ -1,0 +1,28 @@
+load students;
+load enrolled;
+load schedule;
+
+select SID, Firstname from students where Lastname = 'Chan';
+select SID, Firstname from students where Lastname != 'Chan';
+select SID, Firstname from students where Lastname >= 'Chan';
+select SID, Firstname from students where Lastname <= 'Chan';
+select SID, Firstname from students where Lastname > 'Chan';
+select SID, Firstname from students where Lastname < 'Chan';
+
+
+select Firstname, Lastname, Grade from students, enrolled where CCN = '21001' and SID = SID;
+select Firstname, Lastname, Grade from students, enrolled where CCN != '21001' and CCN > '21228' and SID = SID;
+select Firstname, Lastname, Grade from students, enrolled where CCN >= '21001' and SID = SID;
+select Firstname, Lastname, Grade from students, enrolled where CCN <= '21001' and SID = SID;
+select Firstname, Lastname, Grade from students, enrolled where CCN > '21001' and CCN != '21228' and SID = SID;
+select Firstname, Lastname, Grade from students, enrolled where CCN < '21001' and SID > SID;
+
+create table enrolled3 as
+  select SID,CCN,Num,Dept
+     from enrolled, schedule
+     where Dept = 'EECS' and Num = '61A';
+
+/* Now print the names of the students in this list */
+select Firstname, Lastname from students, enrolled3;
+quit;
+

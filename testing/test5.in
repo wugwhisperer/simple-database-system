@@ -1,0 +1,7 @@
+load students;
+load enrolled;
+load schedule;
+print SID from cats;
+load dogs;
+select CCN from enrolled, snow where CCN !=21228;
+quit;

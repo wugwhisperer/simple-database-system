@@ -1,0 +1,13 @@
+load students;
+load enrolled;
+load schedule;
+create table basic (colOne, colTwo, colThree);
+insert into basic values ('ACC', 'acc', 'Acc');
+insert into basic values ('ACC', 'acc', 'aCC'), ('123', '123', '415');
+create table gibberish as select colOne, colTwo, SID, CCN from enrolled, basic where colOne !='123' and SID < 102;
+store gibberish;
+create table gibberish as select SID from enrolled;
+print gibberish;
+load gibberish;
+print gibberish;
+quit;

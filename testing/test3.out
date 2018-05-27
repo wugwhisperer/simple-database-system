@@ -1,0 +1,74 @@
+DB61B System.  Version 2.0.
+> Loaded students.db
+> Loaded enrolled.db
+> Loaded schedule.db
+> > Search results:
+  102 Valerie
+  106 Yangfan
+> Search results:
+  101 Jason
+  103 Jonathan
+  104 Thomas
+  105 Shana
+> Search results:
+  101 Jason
+  102 Valerie
+  103 Jonathan
+  106 Yangfan
+> Search results:
+  102 Valerie
+  104 Thomas
+  105 Shana
+  106 Yangfan
+> Search results:
+  101 Jason
+  103 Jonathan
+> Search results:
+  104 Thomas
+  105 Shana
+> > > Search results:
+  Jason Knowles B
+  Shana Brown B+
+  Valerie Chan B+
+  Yangfan Chan B
+> Search results:
+  Jason Knowles A-
+  Thomas Armstrong B+
+  Valerie Chan A
+  Yangfan Chan A
+> Search results:
+  Jason Knowles A-
+  Jason Knowles B
+  Jason Knowles B+
+  Jonathan Xavier B+
+  Shana Brown A
+  Shana Brown B+
+  Thomas Armstrong A-
+  Thomas Armstrong B+
+  Valerie Chan A
+  Valerie Chan A-
+  Valerie Chan B+
+  Yangfan Chan A
+  Yangfan Chan B
+> Search results:
+  Jason Knowles B
+  Shana Brown B+
+  Valerie Chan B+
+  Yangfan Chan B
+> Search results:
+  Jason Knowles A-
+  Jason Knowles B+
+  Jonathan Xavier B+
+  Thomas Armstrong A-
+  Thomas Armstrong B+
+  Valerie Chan A
+  Valerie Chan A-
+  Yangfan Chan A
+> Search results:
+> > .........> > > Search results:
+  Jason Knowles
+  Shana Brown
+  Thomas Armstrong
+  Valerie Chan
+  Yangfan Chan
+> 

@@ -1,0 +1,19 @@
+DB61B System.  Version 2.0.
+> Loaded students.db
+> Loaded enrolled.db
+> Loaded schedule.db
+> > > > > Stored gibberish.db
+> > Contents of gibberish:
+  101
+  102
+  103
+  104
+  105
+  106
+> Loaded gibberish.db
+> Contents of gibberish:
+  ACC acc 101 21001
+  ACC acc 101 21105
+  ACC acc 101 21228
+  ACC acc 101 21232
+> 
